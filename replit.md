@@ -49,3 +49,13 @@ Platform listing 14 musical theater education tools across 7 categories:
 - `@import url(...)` in index.css MUST come before `@import "tailwindcss"` — PostCSS fails silently otherwise
 - i18n file is at `src/i18n.ts` — import as `'./i18n'` in App.tsx (not `'../i18n'`)
 - App icons use `@assets/N_timestamp.png` format; the alias is set in vite.config.ts
+
+## GitHub Pages deployment
+
+The production site is deployed by `.github/workflows/deploy-pages.yml` whenever
+changes are pushed to `main` or `master`. A deployment can also be started from
+the **Actions** tab with **Run workflow**. The workflow enables GitHub Pages,
+type-checks and builds the Mudical frontend with the repository-specific base
+path, uploads the static output, and deploys it to the `github-pages`
+environment. No repository secrets are required; the workflow uses GitHub's
+short-lived deployment token.
