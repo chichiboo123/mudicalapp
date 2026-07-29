@@ -19,46 +19,46 @@
 ## 도구 목록 | Tool List
 
 ### 기반 | Foundation
-| 도구 | 링크 | 설명 |
-|------|------|------|
-| 감정카드 (Emotion Card) | [열기](https://chichiboo123.github.io/emotioncard/) | 로버트 플루치크의 '감정의 바퀴' 이론을 바탕으로 24가지 감정을 카드 형태로 활용 |
-| 우리네컷 (Our4to) | [열기](https://chichiboo123.github.io/our4to/) | 네컷 사진 촬영 후 다양한 디자인 기능으로 장식 |
-| 핑거피플 (Finger People) | [열기](https://chichiboo123.github.io/finger/) | 손가락 인물 카드를 만드는 캐릭터 창작 지원 도구 |
+| 도구 | 설명 |
+|------|------|
+| 감정카드 (Emotion Card) | 로버트 플루치크의 '감정의 바퀴' 이론을 바탕으로 24가지 감정을 카드 형태로 활용 |
+| 우리네컷 (Our4to) | 네컷 사진 촬영 후 다양한 디자인 기능으로 장식 |
+| 핑거피플 (Finger People) | 손가락 인물 카드를 만드는 캐릭터 창작 지원 도구 |
 
 ### 이야기/대본 | Story & Script
-| 도구 | 링크 | 설명 |
-|------|------|------|
-| 스토리텔링 카드 (Story Card) | [열기](https://chichiboo123.github.io/storycard/) | 랜덤 이미지와 이야기 입력창으로 발상과 표현을 지원 |
-| 인물도감 (Character Matrix) | [열기](https://chichiboo123.github.io/matrix/) | 인물의 특성을 상상하고 드로잉툴로 시각화 |
-| 뮤지컬 대본 노트 (Script Note) | [열기](https://chichiboo123.github.io/scriptnote/) | 해설·대사·노래를 블록 형태로 작성, 저장/불러오기 지원 |
+| 도구 | 설명 |
+|------|------|
+| 스토리텔링 카드 (Story Card) | 랜덤 이미지와 이야기 입력창으로 발상과 표현을 지원 |
+| 인물도감 (Character Matrix) | 인물의 특성을 상상하고 드로잉툴로 시각화 |
+| 뮤지컬 대본 노트 (Script Note) | 해설·대사·노래를 블록 형태로 작성, 저장/불러오기 지원 |
 
 ### 음악 | Music
-| 도구 | 링크 | 설명 |
-|------|------|------|
-| 가사 바꾸기 마법사 (Easy Lyrics) | [열기](https://chichiboo123.github.io/easylyrics/) | 가사를 네모칸으로 변환하여 가창 연습 및 가사 바꾸기 지원 |
-| 여기 있어 피아노 (Easy Piano) | [열기](https://chichiboo123.github.io/easypiano/) | 피아노 연주·코드·자동 반주·발성 연습을 지원하는 포켓 피아노 |
-| 너를 위한 악보 (Easy Score) | [열기](https://chichiboo123.github.io/easyscore/) | 악보를 몰라도 가사 위치로 음높이를 표현하는 시각적 악보 |
+| 도구 | 설명 |
+|------|------|
+| 가사 바꾸기 마법사 (Easy Lyrics) | 가사를 네모칸으로 변환하여 가창 연습 및 가사 바꾸기 지원 |
+| 여기 있어 피아노 (Easy Piano) | 피아노 연주·코드·자동 반주·발성 연습을 지원하는 포켓 피아노 |
+| 너를 위한 악보 (Easy Score) | 악보를 몰라도 가사 위치로 음높이를 표현하는 시각적 악보 |
 
 ### 움직임 | Movement
-| 도구 | 링크 | 설명 |
-|------|------|------|
-| 뮤지컬 동선 노트 (Blocking Note) | [열기](https://chichiboo123.github.io/musicalblockingnote/) | 아이콘·도형으로 무대 동선을 시각화하고 기록 |
+| 도구 | 설명 |
+|------|------|
+| 뮤지컬 동선 노트 (Blocking Note) | 아이콘·도형으로 무대 동선을 시각화하고 기록 |
 
 ### 무대미술 | Stage Design
-| 도구 | 링크 | 설명 |
-|------|------|------|
-| 마이 스테이지 (My Stage) | [열기](https://chichiboo123.github.io/mystage/) | 블록을 쌓고 소품·배우·조명을 배치해 3D 무대 디자인 |
+| 도구 | 설명 |
+|------|------|
+| 마이 스테이지 (My Stage) | 블록을 쌓고 소품·배우·조명을 배치해 3D 무대 디자인 |
 
 ### 공연 | Performance
-| 도구 | 링크 | 설명 |
-|------|------|------|
-| 여기 있어 효과음 (Sound Box) | [열기](https://chichiboo123.github.io/soundbox/) | 다양한 효과음을 재생하고 순서대로 구성하여 공연에 활용 |
-| 뮤지컬 포스터 스튜디오 (Poster Studio) | [열기](https://chichiboo123.github.io/posterstudio/) | 단계별 입력으로 뮤지컬 포스터 초안 디자인 |
+| 도구 | 설명 |
+|------|------|
+| 여기 있어 효과음 (Sound Box) | 다양한 효과음을 재생하고 순서대로 구성하여 공연에 활용 |
+| 뮤지컬 포스터 스튜디오 (Poster Studio) | 단계별 입력으로 뮤지컬 포스터 초안 디자인 |
 
 ### 감상수업 | Appreciation
-| 도구 | 링크 | 설명 |
-|------|------|------|
-| 스테이지빌 (Stagebill) | [열기](https://chichiboo123.github.io/stagebillonline/) | STAGE 선생님들이 큐레이션한 뮤지컬 작품·추천 넘버·수업 아이디어 탐색 |
+| 도구 | 설명 |
+|------|------|
+| 스테이지빌 (Stagebill) | STAGE 선생님들이 큐레이션한 뮤지컬 작품·추천 넘버·수업 아이디어 탐색 |
 
 ---
 
