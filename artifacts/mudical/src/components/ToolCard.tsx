@@ -28,7 +28,7 @@ export function ToolCard({ tool }: ToolCardProps) {
         </div>
       </div>
       
-      <p className="text-sm text-card-foreground/80 leading-relaxed mb-6 line-clamp-2 h-[40px]">
+      <p className="text-sm text-card-foreground/80 leading-relaxed mb-6">
         {t(`${tool.key}.desc`)}
       </p>
       
