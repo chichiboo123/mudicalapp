@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "치수쌤의 뮤.디.컬"
+version = "1.0.0"
+id = "artifacts/mudical"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18725
+
+[services.development]
+run = "pnpm --filter @workspace/mudical run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/mudical", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/mudical/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18725"
+BASE_PATH = "/"
