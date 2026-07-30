@@ -47,8 +47,20 @@ Platform listing 14 musical theater education tools across 7 categories:
 ## Gotchas
 
 - `@import url(...)` in index.css MUST come before `@import "tailwindcss"` — PostCSS fails silently otherwise
+- `BASE_PATH` must never be an empty string. `actions/configure-pages` emits an
+  empty `base_path` when Pages serves from a custom domain root, and an empty
+  Vite `base` switches the build to relative paths, which sets
+  `import.meta.env.BASE_URL` to `./` and gives wouter the base `.` — no route
+  matches and the whole page renders blank. `vite.config.ts` and the workflow
+  both coerce empty to `/`.
 - i18n file is at `src/i18n.ts` — import as `'./i18n'` in App.tsx (not `'../i18n'`)
 - App icons use `@assets/N_timestamp.png` format; the alias is set in vite.config.ts
+
+## Custom domain
+
+The site is served at https://mudicalapp.chichiboo.link. `artifacts/mudical/public/CNAME`
+pins the domain so it survives redeploys, and the workflow copies `index.html`
+to `404.html` as an SPA fallback for deep links.
 
 ## GitHub Pages deployment
 

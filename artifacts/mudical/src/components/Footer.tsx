@@ -10,10 +10,12 @@ export function Footer() {
           href="https://litt.ly/chichiboo" 
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-lg font-bold text-foreground hover:text-primary transition-colors inline-flex items-center gap-2 mb-3"
+          className="text-lg font-bold text-foreground hover:text-primary transition-colors inline-flex items-center gap-2 mb-3 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
           {t('footer_author')}
-          <span className="material-icons text-sm text-accent">stars</span>
+          <span className="material-icons text-sm text-accent" aria-hidden="true">
+            stars
+          </span>
         </a>
         <p className="text-sm text-foreground/60 max-w-lg leading-relaxed">
           {t('footer_notice')}

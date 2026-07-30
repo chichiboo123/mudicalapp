@@ -6,6 +6,7 @@
 **Musical · Digital · Collaboration** — 뮤지컬과 디지털의 콜래버레이션으로 선생님들의 뮤지컬 수업을 돕겠다는 철학으로 만든 웹앱입니다.
 
 🌐 **한국어 / English** 다국어 지원
+🔗 https://mudicalapp.chichiboo.link
 
 ---
 
@@ -82,7 +83,7 @@
 - 인용 또는 소개가 필요한 경우 반드시 **출처를 명시**해 주세요.
 - 협업 및 활용 문의: [litt.ly/chichiboo](https://litt.ly/chichiboo)
 
-> All tools, ideas, content, and designs on this platform are original works created by **Chisu, a teacher dreaming of educational musicals**.  
+> All tools, ideas, content, and designs on this platform are original works created by **CHICHIBOO, a teacher dreaming of educational musicals**.  
 > Reproduction, modification, or redistribution without explicit permission is strictly prohibited.  
 > For collaboration or usage inquiries, please visit [litt.ly/chichiboo](https://litt.ly/chichiboo).
 

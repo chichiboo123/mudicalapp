@@ -11,12 +11,19 @@ export default function Home() {
   return (
     <div className="min-h-[100dvh] relative flex flex-col overflow-x-hidden">
       {/* Starry background effect */}
-      <div className="star-background" />
+      <div className="star-background" aria-hidden="true" />
+
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:rounded-full focus:bg-primary focus:text-primary-foreground focus:font-bold"
+      >
+        {t('skip_to_content')}
+      </a>
 
       <Header />
       <CategoryTabs />
 
-      <main className="flex-1 w-full max-w-5xl mx-auto px-6 py-12 relative z-10 flex flex-col gap-20">
+      <main id="main-content" className="flex-1 w-full max-w-5xl mx-auto px-6 py-12 relative z-10 flex flex-col gap-20">
         {categories.map((category) => {
           const categoryTools = tools.filter(tool => tool.categoryId === category.id);
           
