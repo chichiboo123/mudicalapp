@@ -5,7 +5,8 @@ const resources = {
   ko: {
     translation: {
       site_title: "치수쌤의 뮤.디.컬",
-      site_subtitle: "뮤지컬 × 디지털 × 컬래버레이션 | 모두의 뮤지컬 수업을 위한 디지털 도구 플랫폼",
+      site_tagline: "뮤지컬 × 디지털 × 컬래버레이션",
+      site_description: "모두의 뮤지컬 수업을 위한 디지털 도구 플랫폼",
       meta_description: "선생님의 뮤지컬 수업을 위한 디지털 도구 플랫폼",
       open_app: "앱 열기",
       open_app_aria: "{{name}} 새 탭에서 열기",
@@ -103,7 +104,8 @@ const resources = {
   en: {
     translation: {
       site_title: "CHICHIBOO's Mu.Di.Cal",
-      site_subtitle: "Musical × Digital × Collaboration | A Digital Tool Platform for Musical Theater Teachers",
+      site_tagline: "Musical × Digital × Collaboration",
+      site_description: "A Digital Tool Platform for Musical Theater Teachers",
       meta_description: "A digital tool platform for musical theater classes",
       open_app: "Open App",
       open_app_aria: "Open {{name}} in a new tab",
