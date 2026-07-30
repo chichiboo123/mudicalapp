@@ -1,0 +1,23 @@
+kind = "mobile"
+previewPath = "/mudical-mobile/"
+title = "뮤디컬 모바일"
+version = "1.0.0"
+id = "artifacts/mudical-mobile"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/mudical-mobile/" ]
+localPort = 24036
+
+[services.development]
+run = "pnpm --filter @workspace/mudical-mobile run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/mudical-mobile", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/mudical-mobile", "run", "serve" ]
+
+[services.env]
+PORT = "24036"
+BASE_PATH = "/mudical-mobile/"
