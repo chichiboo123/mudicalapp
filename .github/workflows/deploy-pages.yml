@@ -49,8 +49,13 @@ jobs:
 
       - name: Build application
         env:
-          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          # `base_path` is empty when the site is served from a custom domain
+          # root; fall back to "/" so Vite never switches to relative-path mode.
+          BASE_PATH: ${{ steps.pages.outputs.base_path || '/' }}
         run: pnpm --filter @workspace/mudical run build
+
+      - name: Add SPA fallback
+        run: cp artifacts/mudical/dist/public/index.html artifacts/mudical/dist/public/404.html
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3

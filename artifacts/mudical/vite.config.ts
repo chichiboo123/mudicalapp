@@ -12,7 +12,12 @@ if (Number.isNaN(port) || port <= 0) {
   throw new Error(`Invalid PORT value: "${rawPort}"`);
 }
 
-const basePath = process.env.BASE_PATH ?? '/';
+// `actions/configure-pages` emits an EMPTY base_path when the Pages site is
+// served from a custom domain root (e.g. mudicalapp.chichiboo.link). `??` would
+// let that empty string through and Vite would switch to relative-path mode,
+// which breaks the router. Treat empty/unset alike and always end with a slash.
+const rawBasePath = process.env.BASE_PATH?.trim() || '/';
+const basePath = rawBasePath.endsWith('/') ? rawBasePath : `${rawBasePath}/`;
 
 export default defineConfig({
   base: basePath,

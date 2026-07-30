@@ -6,7 +6,14 @@ const resources = {
     translation: {
       site_title: "치수쌤의 뮤.디.컬",
       site_subtitle: "뮤지컬 × 디지털 × 컬래버레이션 | 모두의 뮤지컬 수업을 위한 디지털 도구 플랫폼",
+      meta_description: "선생님의 뮤지컬 수업을 위한 디지털 도구 플랫폼",
       open_app: "앱 열기",
+      open_app_aria: "{{name}} 새 탭에서 열기",
+      skip_to_content: "본문 바로가기",
+      categories_nav_label: "카테고리",
+      not_found_title: "페이지를 찾을 수 없습니다",
+      not_found_desc: "요청하신 페이지가 없거나 주소가 변경되었습니다.",
+      not_found_home: "홈으로 돌아가기",
       footer_author: "Created by. 교육뮤지컬 꿈꾸는 치수쌤",
       footer_notice: "아이디어와 콘텐츠를 존중해 주세요. 허락 없이 복제·변형·재배포를 금합니다.",
       toggle_lang: "English",
@@ -95,10 +102,17 @@ const resources = {
   },
   en: {
     translation: {
-      site_title: "Chisu's Mu.Di.Cal",
+      site_title: "CHICHIBOO's Mu.Di.Cal",
       site_subtitle: "Musical × Digital × Collaboration | A Digital Tool Platform for Musical Theater Teachers",
+      meta_description: "A digital tool platform for musical theater classes",
       open_app: "Open App",
-      footer_author: "Created by. Chisu, a Teacher Dreaming of Educational Musicals",
+      open_app_aria: "Open {{name}} in a new tab",
+      skip_to_content: "Skip to main content",
+      categories_nav_label: "Categories",
+      not_found_title: "Page Not Found",
+      not_found_desc: "The page you are looking for does not exist or has been moved.",
+      not_found_home: "Back to home",
+      footer_author: "Created by. CHICHIBOO, a Teacher Dreaming of Educational Musicals",
       footer_notice: "Please respect the ideas and content. Reproduction, modification, or redistribution without permission is prohibited.",
       toggle_lang: "한국어",
       categories: {
@@ -186,15 +200,37 @@ const resources = {
   }
 };
 
+export const LANGUAGE_STORAGE_KEY = 'mudical.lang';
+
+// Remember the visitor's choice across reloads; fall back to Korean, which
+// stays the default for anyone arriving without a stored preference.
+function initialLanguage(): 'ko' | 'en' {
+  try {
+    const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    if (stored === 'ko' || stored === 'en') return stored;
+  } catch {
+    // localStorage can be unavailable (private mode, blocked cookies).
+  }
+  return 'ko';
+}
+
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: "ko", 
-    fallbackLng: "en",
+    lng: initialLanguage(),
+    fallbackLng: "ko",
     interpolation: {
-      escapeValue: false 
+      escapeValue: false
     }
   });
+
+i18n.on('languageChanged', (lng) => {
+  try {
+    localStorage.setItem(LANGUAGE_STORAGE_KEY, lng.startsWith('ko') ? 'ko' : 'en');
+  } catch {
+    // Ignore storage failures — the toggle still works for this session.
+  }
+});
 
 export default i18n;
