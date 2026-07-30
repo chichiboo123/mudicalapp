@@ -14,7 +14,7 @@ type DeepRecord = { [key: string]: string | DeepRecord };
 const translations: Record<Lang, DeepRecord> = {
   ko: {
     site_title: '뮤.디.컬',
-    site_subtitle: '선생님의 뮤지컬 수업을 위한 디지털 도구',
+    site_subtitle: '모두의 뮤지컬 수업을 위한 디지털 도구',
     open_app: '앱 열기',
     toggle_lang: 'English',
     all_categories: '전체',

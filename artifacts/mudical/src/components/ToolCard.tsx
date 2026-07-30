@@ -19,7 +19,10 @@ export function ToolCard({ tool }: ToolCardProps) {
           />
         </div>
         <div className="flex flex-col pt-1">
-          <h3 className="font-bold text-lg text-card-foreground leading-tight tracking-tight">
+          <h3
+            className="font-bold text-lg text-card-foreground leading-tight tracking-tight"
+            style={{ wordBreak: 'keep-all' }}
+          >
             {t(`${tool.key}.name_ko`)}
           </h3>
           <p className="text-sm font-medium text-muted-foreground mt-0.5 font-sans">

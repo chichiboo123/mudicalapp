@@ -5,7 +5,7 @@ const resources = {
   ko: {
     translation: {
       site_title: "치수쌤의 뮤.디.컬",
-      site_subtitle: "뮤지컬 × 디지털 × 콜래버레이션 | 선생님의 뮤지컬 수업을 위한 디지털 도구 플랫폼",
+      site_subtitle: "뮤지컬 × 디지털 × 컬래버레이션 | 모두의 뮤지컬 수업을 위한 디지털 도구 플랫폼",
       open_app: "앱 열기",
       footer_author: "Created by. 교육뮤지컬 꿈꾸는 치수쌤",
       footer_notice: "아이디어와 콘텐츠를 존중해 주세요. 허락 없이 복제·변형·재배포를 금합니다.",

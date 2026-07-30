@@ -1,17 +1,17 @@
-import emotionCardImg from "@assets/1_1785367399127.png";
-import our4toImg from "@assets/2_1785367399127.png";
-import fingerPeopleImg from "@assets/3_1785367399128.png";
-import storyCardImg from "@assets/4_1785367399128.png";
-import characterMatrixImg from "@assets/5_1785367399128.png";
-import scriptNoteImg from "@assets/6_1785367399129.png";
-import easyLyricsImg from "@assets/7_1785367399129.png";
-import easyPianoImg from "@assets/8_1785367399130.png";
-import easyScoreImg from "@assets/9_1785367399130.png";
-import blockingNoteImg from "@assets/10_1785367399130.png";
-import myStageImg from "@assets/11_1785367399130.png";
-import soundBoxImg from "@assets/12_1785367399131.png";
-import posterStudioImg from "@assets/13_1785367399131.png";
-import stagebillImg from "@assets/14_1785367399131.png";
+import emotionCardImg from "@assets/1_1785371757493.png";
+import our4toImg from "@assets/2_1785371757494.png";
+import fingerPeopleImg from "@assets/3_1785371757494.png";
+import storyCardImg from "@assets/4_1785371757495.png";
+import characterMatrixImg from "@assets/5_1785371757495.png";
+import scriptNoteImg from "@assets/6_1785371757495.png";
+import easyLyricsImg from "@assets/7_1785371757496.png";
+import easyPianoImg from "@assets/8_1785371757496.png";
+import easyScoreImg from "@assets/9_1785371757496.png";
+import blockingNoteImg from "@assets/10_1785371757497.png";
+import myStageImg from "@assets/11_1785371757497.png";
+import soundBoxImg from "@assets/12_1785371757497.png";
+import posterStudioImg from "@assets/13_1785371757498.png";
+import stagebillImg from "@assets/14_1785371757498.png";
 
 export const categories = [
   { id: "foundation", key: "categories.foundation", icon: "foundation" },

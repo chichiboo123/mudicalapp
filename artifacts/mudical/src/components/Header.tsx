@@ -22,12 +22,23 @@ export function Header() {
           <div className="absolute -top-4 -right-6 text-accent animate-pulse">
             <span className="material-icons text-3xl">auto_awesome</span>
           </div>
-          <h1 className="text-5xl md:text-6xl text-foreground" style={{ fontFamily: "var(--font-display)" }}>
+          <h1
+            className="text-5xl md:text-6xl text-foreground"
+            style={{
+              fontFamily: i18n.language.startsWith('ko')
+                ? 'PretendardGOV Variable'
+                : 'DotGothic16',
+              fontWeight: i18n.language.startsWith('ko') ? 700 : undefined,
+            }}
+          >
             {t('site_title')}
           </h1>
         </div>
         
-        <p className="text-base md:text-lg text-foreground/80 font-medium max-w-2xl leading-relaxed">
+        <p
+          className="text-base md:text-lg text-foreground/80 font-medium break-words leading-relaxed"
+          style={{ wordBreak: 'keep-all', overflowWrap: 'anywhere' }}
+        >
           {t('site_subtitle')}
         </p>
       </div>

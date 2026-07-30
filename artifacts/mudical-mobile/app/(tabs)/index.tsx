@@ -128,7 +128,7 @@ function ToolCard({ tool, onPress }: { tool: Tool; onPress: () => void }) {
 // ─── HomeScreen ───────────────────────────────────────────────────────────────
 export default function HomeScreen() {
   const colors = useColors();
-  const { t, toggleLang } = useLanguage();
+  const { lang, t, toggleLang } = useLanguage();
   const insets = useSafeAreaInsets();
 
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -184,7 +184,13 @@ export default function HomeScreen() {
 
           <View style={styles.headerRow}>
             <View style={styles.titleGroup}>
-              <Text style={[styles.title, { color: colors.foreground }]}>
+              <Text
+                style={[
+                  styles.title,
+                  lang === 'en' && styles.englishTitle,
+                  { color: colors.foreground },
+                ]}
+              >
                 {t('site_title')}
               </Text>
               <Text style={[styles.subtitle, { color: colors.mutedForeground }]}>
@@ -238,7 +244,7 @@ export default function HomeScreen() {
                   size={13}
                   color={isActive ? colors.primaryForeground : colors.mutedForeground}
                 />
-                <Text
+                  <Text
                   style={[
                     styles.pillText,
                     { color: isActive ? colors.primaryForeground : colors.mutedForeground },
@@ -257,7 +263,7 @@ export default function HomeScreen() {
     ),
     // re-render when lang or category changes
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [colors, selectedCategory, topPadding, t, toggleLang, handleCategoryPress],
+    [colors, lang, selectedCategory, topPadding, t, toggleLang, handleCategoryPress],
   );
 
   const renderItem = useCallback(
@@ -313,8 +319,11 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 28,
-    fontFamily: 'Inter_700Bold',
+    fontWeight: '700',
     letterSpacing: -0.5,
+  },
+  englishTitle: {
+    fontFamily: 'Inter_700Bold',
   },
   subtitle: {
     fontSize: 12,
@@ -347,10 +356,12 @@ const styles = StyleSheet.create({
     gap: 5,
     paddingHorizontal: 12,
     paddingVertical: 7,
+    flexShrink: 0,
   },
   pillText: {
     fontSize: 12,
     fontFamily: 'Inter_500Medium',
+    flexShrink: 0,
   },
   divider: {
     height: 1,
