@@ -48,11 +48,17 @@ export function Header() {
             </h1>
           </div>
 
+          {/* Narrow screens break at the divider so the description gets its
+              own line, instead of wrapping mid-phrase. md+ keeps one line. */}
           <p
             className="text-base md:text-lg text-foreground/80 font-medium break-words leading-relaxed"
             style={{ wordBreak: 'keep-all', overflowWrap: 'anywhere' }}
           >
-            {t('site_subtitle')}
+            <span className="block md:inline">{t('site_tagline')}</span>
+            <span className="hidden md:inline" aria-hidden="true">
+              {' | '}
+            </span>
+            <span className="block md:inline">{t('site_description')}</span>
           </p>
         </div>
       </div>
